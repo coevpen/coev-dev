@@ -9,12 +9,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-gradient-to-r from-blue-500 to-indigo-500;
+  @apply bg-gradient-to-r from-blue-300 to-indigo-500;
 }
 
 main{
   min-height: 74.5vh;
 }
+
+/* navigation */
+nav{
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+nav a{
+  @apply font-bold px-3 py-2;
+}
+
+
+/* Main page */
+.aboutMe{
+  @apply flex items-center;
+  width: 100%;
+  margin-top:12%;
+
+}
+
+.aboutMeTitle{
+  width: 100%;
+}
+
+.mePhoto{
+  border-radius: 50%;
+  margin-left: 35%;
+}
+.name{
+  margin-left: 13%;
+}
+
+.subtitle{
+  margin-left: 10%;
+  width: 100%;
+}
+
+
+/* About Me */
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
