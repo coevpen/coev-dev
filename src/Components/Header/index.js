@@ -1,11 +1,15 @@
 import React from 'react';
 import Nav from './Nav';
 
-function Header(){
+function Header(props){
+    const {pageSelected, setPageSelected} = props;
 
     return(
         <header>
-            <Nav/>
+            <Nav
+            pageSelected={pageSelected}
+            setPageSelected={setPageSelected}
+            />
         </header>
     );
 }
