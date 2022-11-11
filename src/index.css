@@ -39,7 +39,7 @@ nav a, .nav-link{
 }
 
 
-/* Main page */
+/* Start page */
 .aboutMe{
   @apply flex items-center;
   width: 100%;
@@ -82,4 +82,110 @@ footer{
 
 .logo{
   margin-left: 35%;
+}
+
+/* Contact form */
+
+h1{
+  font-size: 200%;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+form{
+  margin-top: 12%;
+  margin-left: 25%;
+}
+
+.formName, .email, .message{
+  font-weight: bold;
+}
+
+.formName{
+  margin-right: 64px;
+}
+
+.email{
+  margin-right: 6px;
+}
+
+.message{
+  margin-right: 40px;
+}
+
+.error-text{
+  color:crimson;
+}
+
+input{
+  padding: 0.25rem;
+  width: 490px;
+  margin-bottom: 5px;
+}
+
+textarea{
+  width: 600px;
+  height: 130px;
+  padding: 5px;
+}
+
+
+.submitBtn{
+  @apply bg-gradient-to-r from-blue-300 to-indigo-500;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
+  margin-left: 8%;
+  width: 300px;
+}
+
+/*QUERY FOR 803 AND SMALLER*/
+
+@media screen and (max-width: 808px){
+  form{
+    margin-top: 12%;
+    margin-left: 15%;
+  }
+
+  .aboutMe{
+    @apply flex-wrap;
+  }
+
+  .mePhoto{
+    margin-left: 15%;
+  }
+
+}
+
+@media screen and (max-width: 714px){
+  form{
+    margin-top: 12%;
+    margin-left: 5%;
+  }
+
+  textarea{
+    width: 300px;
+  }
+
+  input{
+    width: 200px;
+  }
+
+  .submitBtn{
+    margin-left: 0%;
+  }
+
+  nav{
+    @apply flex;
+  }
+
+  nav span{
+    @apply flex-wrap;
+  }
+
+  .logo{
+    margin-left: 15%;
+  }
+
 }
